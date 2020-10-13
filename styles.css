@@ -1,0 +1,102 @@
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 100vh;
+    background: #06073C;
+    
+    
+}
+
+.calc
+{
+   position:absolute;
+   display: grid;
+   background: #050F1C;
+   margin-top: 100px;
+   padding: 30px 30px 30px 30px;
+       
+    
+}
+
+.calc .screen
+{
+    grid-column: span 5;
+    grid-gap: 10px 20px;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 18px;
+}
+
+.calc span
+{
+  display: grid;
+  grid-gap: 10px 10px;
+  padding: 10px;    
+  width: 60px;
+  height:80px;
+  place-items: center;
+  text-align: center;    
+  border:1px solid r,g,b (28, 40, 51) ;
+  background-color: #839192;    
+    
+    
+}
+.calc span.opp
+{
+    background: #273746;
+    
+}
+
+.calc span.clear
+{
+    grid-column: span 2;
+    width: 120px;
+    background:#BF081C; 
+}
+
+
+.calc span.equal
+{
+    grid-column: span 2;
+    width: 120px;
+    border-bottom-right-radius: 20px;
+    background: #BF081C;
+}
+
+.calc span:hover
+{
+    background: #0AF763;
+    color: black;
+}
+h1
+{
+ animation-name: flashing_title;
+  animation-duration: 10s;   
+    
+    
+}
+
+@keyframes flashing_title {
+  0%   {color: #00FF00 ;}
+  25%  {color: #9400D3;}
+  50%  {color: #00CED1 ;}
+  100% {color: #FF8C00;}
+}

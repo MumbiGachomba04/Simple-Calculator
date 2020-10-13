@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+    <meta charset="utf-8">
+    
+    <meta name= "calculator" content= "calculator">
+    <meta name= "viewport" content= "width=device width,initial-scale = 1.0">  
+    <link rel = "stylesheet" href="styles.css" type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">    
+    <title>Simple Calculator</title>    
+                
+    </head>
+    
+    
+    <body>
+        
+        
+        <h1 style = "color: white">Simple Calculator</h1>
+      <form class = "calc"name ="calculator" >  
+          
+          <input class = "screen" type = "text" name = "display" readonly= "">
+          <span class ="buttons" onclick="document.calculator.display.value += '7' ">7</span>
+          <span class ="buttons" onclick="document.calculator.display.value += '8' ">8</span>
+          <span class ="buttons" onclick="document.calculator.display.value += '9' ">9</span>
+          <span class ="buttons clear" onclick="document.calculator.display.value = ''">C</span>
+          <span class ="buttons" onclick="document.calculator.display.value += '4' ">4</span>
+          <span class ="buttons" onclick="document.calculator.display.value += '5' ">5</span>
+          <span class ="buttons" onclick="document.calculator.display.value += '6' ">6</span>
+          <span class ="buttons opp" onclick="document.calculator.display.value += '*' ">*</span>
+          <span class ="buttons opp" onclick="document.calculator.display.value += '/' ">/</span>
+          <span class ="buttons" onclick="document.calculator.display.value += '1' ">1</span>
+          <span class ="buttons" onclick="document.calculator.display.value += '2' ">2</span>
+          <span class ="buttons" onclick="document.calculator.display.value += '3' ">3</span>
+          <span class ="buttons opp" onclick="document.calculator.display.value += '+' ">+</span>
+          <span class ="buttons opp" onclick="document.calculator.display.value += '-' ">-</span>
+          <span class ="buttons" onclick="document.calculator.display.value += '0' " style="border-bottom-left-radius: 20px;">0</span>
+          <span class ="buttons" onclick="document.calculator.display.value += '00' ">00</span>
+          <span class ="buttons" onclick="document.calculator.display.value += '.' ">.</span>
+          <span class ="buttons equal" onclick="document.calculator.display.value = eval (calculator.display.value)  ">=</span>
+ 
+          
+        
+        </form>
+        
+      <script>alert('WELCOME!!')</script>  
+        
+    </body>
+
+
+
+
+</html>
